@@ -1,0 +1,21 @@
+﻿<Window x:Class="Media.TVProgramWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Media"
+        mc:Ignorable="d"
+    Title="TVProgramWindow" Height="533.077" Width="635.31" Closing="Window_Closing" WindowStartupLocation="CenterScreen" FontSize="12">
+    <Grid>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="34,446,0,0" VerticalAlignment="Top" Click="Button_Click" Height="32"/>
+        <Label Content="Название" HorizontalAlignment="Left" Margin="34,30,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="nameTV"  HorizontalAlignment="Left" Height="28" Margin="115,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="472" BorderThickness="0,0,0,1"/>
+        <Label Content="Описание" HorizontalAlignment="Left" Margin="34,244,0,0" VerticalAlignment="Top"/>
+        <Label Content="Актеры" HorizontalAlignment="Left" Margin="34,326,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="actorsTV" HorizontalAlignment="Left" Height="28" Margin="115,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="472"/>
+        <Label Content="Год выпуска" HorizontalAlignment="Left" Margin="34,386,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="yearTV" HorizontalAlignment="Left" Height="28" Margin="115,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" MaxLength="4" IsUndoEnabled="False" PreviewTextInput="YearTV_PreviewTextInput"/>
+        <TextBox x:Name="infoTV" HorizontalAlignment="Left" Height="182" Margin="119,87,0,0" TextWrapping="WrapWithOverflow" Text="" VerticalAlignment="Top" Width="468"/>
+
+    </Grid>
+</Window>
